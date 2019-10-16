@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        >
+        <ImageView
+            android:id="@+id/repo_item_avatar_owner"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+             />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/repo_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                />
+
+            <TextView
+                android:id="@+id/repo_item_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="10dp"
+                android:textStyle="italic"
+                android:textColor="@color/grayLetter"
+                android:layout_marginTop="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/repo_item_img_fork"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/ic_fork"/>
+                <TextView
+                    android:id="@+id/repo_item_fork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1234"
+                    android:textSize="9dp"
+                    android:layout_marginLeft="1dp"
+                    android:textColor="@color/grayLetter"
+                    />
+
+                <ImageView
+                    android:id="@+id/repo_item_img_stargazers"
+                    android:layout_width="11dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_star"/>
+                <TextView
+                    android:id="@+id/repo_item_stargazers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1234"
+                    android:textSize="9dp"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/grayLetter"
+                    />
+
+                <TextView
+                    android:id="@+id/repo_item_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Java"
+                    android:textSize="9dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/colorAccent"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
